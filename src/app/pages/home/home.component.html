@@ -1,0 +1,23 @@
+<div class="p-grid p-jc-between p-ai-center p-mb-3">
+    <div class="p-d-flex p-ai-center">
+        <input type="text" pInputText placeholder="Buscar..." [(ngModel)]="searchQuery" (input)="filterData()" class="search-input p-inputtext p-component p-mr-2">
+    </div>
+    <button class="p-button p-button-danger p-ml-auto" (click)="logout()">Cerrar Sesión</button>
+</div>
+
+<div class="p-grid">
+    <div *ngFor="let item of paginatedData; let i = index" class="p-col-12 p-md-6 p-lg-3 p-d-flex p-jc-center p-ai-center">
+        <div class="card p-shadow-3 p-p-3 p-m-2 p-d-flex p-flex-column p-ai-start">
+            <div class="title p-text-bold p-mb-2">
+                <p>{{ item.title }}</p>
+            </div>
+            <div class="body">
+                <p>{{ item.body }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<p-paginator [rows]="8" [totalRecords]="totalRecords" (onPageChange)="paginate($event)"></p-paginator>
+
+<app-loading *ngIf="loading"></app-loading>

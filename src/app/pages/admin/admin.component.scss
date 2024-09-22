@@ -1,0 +1,86 @@
+.table-container {
+    margin: 50px; 
+    border: 1px solid #ccc;
+}
+
+.p-table {
+    width: auto;
+    max-width: 100%; 
+}
+
+.p-button-rounded {
+    border-radius: 50%;
+}
+
+.p-button-text {
+    background: transparent;
+    border: none;
+    color: #666;
+    transition: color 0.3s ease-in-out;
+}
+
+.p-button-text:hover {
+    color: #333;
+}
+
+.p-mr-2 {
+    margin-right: 0.5rem;
+}
+
+.p-inputtext {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.75rem;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.p-inputtext:focus {
+    border-color: #007ad9;
+    box-shadow: 0 0 5px rgba(0, 122, 217, 0.5);
+    outline: none;
+}
+
+.p-inputtext.p-mb-2 {
+    margin-bottom: 1rem;
+}
+
+.p-button {
+    background-color: #007ad9;
+    border: none;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.p-button:hover {
+    background-color: #005bb5;
+}
+
+.p-button-text {
+    background: transparent;
+    border: none;
+    color: #007ad9;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.p-button-text:hover {
+    color: #005bb5;
+}
+
+.search-input {
+    margin-right: 1rem;
+    width: 300px;
+    flex: 1;
+}
+
+.create-button {
+    margin-left: 1rem;
+    white-space: nowrap;
+}
